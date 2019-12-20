@@ -19,7 +19,7 @@ const ProductListItem = (
 
             </div>
             <Card.Content>
-                <Card.Header>Produs 20</Card.Header>
+                <Card.Header>{product.title}</Card.Header>
                 <Card.Meta>
                     <span className='date'>Product code: 20 <br/></span>
                     <span className='date'>Expiration date: 28 March 2020</span>
