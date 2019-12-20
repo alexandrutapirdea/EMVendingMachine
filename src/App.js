@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'semantic-ui-css/semantic.min.css'
 
-function App() {
+import ProductList from "./components/ProductList"
+import BankSection from "./components/BankSection"
+
+import OrderProductList from "./components/OrderProductList"
+
+class App extends React.Component {
+render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <ProductList className="product-list"/>
+  <BankSection />
+  <OrderProductList/>
     </div>
   );
 }
-
+}
 export default App;
